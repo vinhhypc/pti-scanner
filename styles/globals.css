@@ -2,26 +2,71 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  line-break: strict;
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: "Mulish";
+}
+#__next {
+  @apply h-full;
+}
+blockquote,
+dd,
+dl,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+pre {
+  margin: 0;
+}
+.width-layout {
+  max-width: 450px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.box-shadow-line {
+  background: #fff;
+  box-shadow: 0px -8px 20px 0px rgba(45, 90, 149, 0.08);
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.info-user {
+  background-color: rgb(243 244 246);
+}
+.ant-modal-content {
+  border-radius: 20px !important;
+}
+.bg-logo {
+  background-color: rgb(0, 55, 123);
+}
+.image-rotate {
+  transition: transform 0.3s ease;
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+.image-not-rotate {
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s ease;
+}
+.bg-color-camera {
+  background-color: #f5f8ff;
+}
+.camera-button {
+  position: fixed;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.rotate-camera-button {
+  transition: transform 0.3s ease;
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+.btn-cam:disabled {
+  border: none!important;
+  color: #c4c4c4 !important;
 }
