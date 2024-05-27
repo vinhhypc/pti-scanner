@@ -1,5 +1,5 @@
 "use client";
-import uploadApi from "@/api/uploadApi";
+import uploadApi from "@/src/api/uploadApi";
 import { Button, message } from "antd";
 import dynamic from "next/dynamic";
 import { useCallback, useRef, useState } from "react";
